@@ -29,7 +29,7 @@ namespace ConsoleApp1
         {
             if (e.Message.Text != null)
             {
-                Console.WriteLine($"Received a text message in chat {e.Message.Chat.Id}.");
+                Console.WriteLine($"Received a text message  chat {e.Message.Chat.Id}.");
 
                  await botClient.SendTextMessageAsync(chatId: e.Message.Chat, text: "You said:\n" + e.Message.Text, replyToMessageId: e.Message.MessageId );
                
